@@ -21,7 +21,7 @@ public class GameDTO {
     }
 
     public GameDTO(Game game) {
-        BeanUtils.copyProperties(game, this);
+        BeanUtils.copyProperties(game, this); //para usar o BeanUtils deve declarar setter e getters
     }
 
     public Long getId() {
